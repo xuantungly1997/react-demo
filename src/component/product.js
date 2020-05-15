@@ -4,6 +4,8 @@ import {Container, Row, Col, Card, CardImg, CardText, CardBody,
 
 import axios from 'axios';
 
+import { CartContext } from '../context/cart'
+
 class Product extends Component {
   constructor() {
     super();
@@ -30,15 +32,21 @@ class Product extends Component {
         <Container>
           <h2>Products</h2>
           <Row>
-            {isLoading && <div class="loading">Loading&#8230;</div>}
+            {isLoading && <div className="loading">Loading&#8230;</div>}
             { products.map( product => (
-              <Col sm = "4"> 
+              <Col sm = "4" key = {product._id}> 
                 <Card>
                   <CardImg top width="100%" src={product.image} alt="Card image cap" />
                   <CardBody>
                     <CardTitle>{product.title}</CardTitle>
                     <CardText>{product.description}</CardText>
-                    <Button>Add</Button>
+                    <CartContext.Consumer>
+                      {({addToCart}) => (
+                        <Button onClick = {() => addToCart(product)}>
+                          Add
+                        </Button>
+                      )}
+                    </CartContext.Consumer>
                   </CardBody>
                 </Card>
               </Col>

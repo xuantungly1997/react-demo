@@ -13,6 +13,8 @@ import {
 
 import {Link} from "react-router-dom";
 
+import {CartContext} from '../context/cart';
+
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
@@ -30,7 +32,13 @@ function Header() {
                             <NavLink><Link to="/product">Product</Link></NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink><Link to="/contact">Contact</Link></NavLink>
+                            <NavLink>
+                                <CartContext.Consumer>
+                                    {({lengthCart}) => (
+                                        <Link to="/contact">Cart ({lengthCart})</Link>
+                                    )}
+                                </CartContext.Consumer>
+                            </NavLink>
                         </NavItem>
                     </Nav>
                     <NavbarText>Simple Text</NavbarText>
