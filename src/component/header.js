@@ -44,6 +44,7 @@ function Header() {
                     <NavbarText>Simple Text</NavbarText>
                 </Collapse>
             </Navbar>
+            <h1>hello nha</h1>
         </div>
     );
 }
