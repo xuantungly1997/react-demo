@@ -1,7 +1,7 @@
 import React from 'react';
 import { CartContext } from '../context/cart';
 import {Container, Row, Col, Card, CardImg, CardText, CardBody,
-  CardTitle, Button } from 'reactstrap';
+  CardTitle } from 'reactstrap';
 
 const Contact = () => {
     return (
