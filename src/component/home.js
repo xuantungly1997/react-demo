@@ -6,6 +6,8 @@ function Home() {
         HOME
         <p>Thêm commit</p>
         <p>Thêm commit222222222222</p>
+        <p>Thêm commit222222222222</p>
+        <p>Thêm commit222222222222</p>
       </div>
     );
   }
