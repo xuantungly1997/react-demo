@@ -24,6 +24,7 @@ const Contact = () => {
                   ))
                 )}
             </CartContext.Consumer>
+            <p>aaaa</p>
           </Row>
         </Container>
     );
