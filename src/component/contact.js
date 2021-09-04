@@ -18,6 +18,7 @@ const Contact = () => {
                         <CardBody>
                           <CardTitle>{pro.title}</CardTitle>
                           <CardText>{pro.description}</CardText>
+                          <CardText>{pro.description}</CardText>
                         </CardBody>
                       </Card>
                     </Col>
