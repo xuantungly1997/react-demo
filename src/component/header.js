@@ -42,6 +42,7 @@ function Header() {
                         </NavItem>
                     </Nav>
                     <NavbarText>Simple Text</NavbarText>
+                    <NavbarText>Simple Text1111111111</NavbarText>
                 </Collapse>
             </Navbar>
         </div>

@@ -44,6 +44,10 @@ class Product extends Component {
                       {({addToCart}) => (
                         <Button onClick = {() => addToCart(product)}>
                           Add
+                          Add
+                          Add
+                          Add
+                          Add
                         </Button>
                       )}
                     </CartContext.Consumer>
