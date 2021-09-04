@@ -52,6 +52,7 @@ class Product extends Component {
               </Col>
             ))}
           </Row>
+          <p>aloooooo</p>
         </Container>
       );
     }
